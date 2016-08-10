@@ -6,3 +6,17 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+def cumulative_sum(list_of_nos):
+	cum_sum = 0
+	for idx in range(0,len(list_of_nos)):
+		cum_sum += list_of_nos[idx]
+		list_of_nos[idx] = cum_sum
+
+def main():
+	list_of_nos = [1, 2, 3, 6]
+	cumulative_sum(list_of_nos)
+	print(list_of_nos)
+
+if __name__ == "__main__":
+	main()
